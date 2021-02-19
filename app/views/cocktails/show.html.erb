@@ -1,0 +1,14 @@
+<div class="container">
+  <div>
+    <%= image_tag "margarita-cocktail.jpg", alt: "Le Wagon", width: 200 %>
+    <%= @cocktail.name %>
+    <%= @cocktail.doses.name %>
+
+  </div>
+
+  <div class='btn btn-primary'>
+     <%= link_to "Add a new dose!", new_cocktail_dose_path(@cocktail) %>
+  </div>
+
+
+</div>
